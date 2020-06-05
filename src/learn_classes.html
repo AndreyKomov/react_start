@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Human {
+      constructor (name, age, work) {
+        // console.log("param:", name, age);
+        
+        this.firstName=name;
+        this.name=name;
+        this.age=age;
+        this.height=100;
+        this.hasTail=false;
+        this.job=work;
+        this.drink=this.drink.bind(this);  // служебная запись - ссылыется на дрин в этом же классе
+        this.cash=this.cash.bind(this);
+        this.bag=10;
+      }
+
+      drink (label, vol) {
+        return "I drink " + label + ", " + vol + " %!";
+      }
+
+      cash (card) {
+        this.bag=this.bag+card;
+        return this.bag;
+      }
+
+      shopping (price) {
+        if (this.bag<price) {
+          return "no money - no honey"
+        } else {
+          return this.bag=this.bag-price;
+        }
+        
+
+      }
+    }
+
+    
+
+    let zavod = {
+          title:"zavod",
+          jobTittle:{
+            lable:"director"
+          }
+        };
+        
+
+    let hockeyMan = new Human("Jorge", 19, zavod);
+
+    console.log("hockeyMan:", hockeyMan);
+    console.log(hockeyMan.age);
+    console.log(hockeyMan.drink("rum", 50), hockeyMan.cash(500), hockeyMan.cash(50), hockeyMan.shopping(5));
+    
+
+
+    let bomzh = new Human("Morze", 25, "nowhere");
+    console.log("bomzh:", bomzh);
+    
+
+    
+  </script>
+</body>
+</html>
