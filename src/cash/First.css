@@ -27,3 +27,14 @@
   color: green;
   background-color: hotpink;
 }
+
+.balance {
+  color: red;
+  font-weight: 500;
+  border: solid seagreen;
+}
+
+.alert {
+  color: springgreen;
+  border-radius: 10px;
+}

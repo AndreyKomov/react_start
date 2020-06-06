@@ -84,8 +84,22 @@ render(){
       
     </div> */}
 
-    <div>
-      {+(this.state.rent) + +(this.state.food) + +(this.state.entertaments) + +(this.state.bar) + +(this.state.car)}
+    <div className="balance">
+      <p>Balans:</p>
+      {+(this.state.salary) - (+(this.state.rent) + +(this.state.food) + +(this.state.entertaments) + 
+      +(this.state.bar) + +(this.state.car))}
+    </div>
+    
+    <div className="alert">
+      <button className="button" onClick={()=>{
+        if ((+(this.state.salary) - (+(this.state.rent) + +(this.state.food) + +(this.state.entertaments) + 
+          +(this.state.bar) + +(this.state.car)))<0) {
+          alert("It's sucks!")
+        } else {
+          alert("I'm a Superman!")
+        }
+      }}>Do you spender?</button>
+      
     </div>
     
     
