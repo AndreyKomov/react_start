@@ -1,0 +1,29 @@
+.card {
+  color: greenyellow;
+  background-color: indigo;
+}
+
+.rent {
+  color: blue;
+  background-color: grey;
+}
+
+.food {
+  color: yellow;
+  background-color: black;
+}
+
+.intertaments {
+  color: blueviolet;
+  background-color: chartreuse;
+}
+
+.bar {
+  color: violet;
+  background-color: yellow;
+}
+
+.car {
+  color: green;
+  background-color: hotpink;
+}

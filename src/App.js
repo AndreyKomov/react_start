@@ -8,10 +8,10 @@ import First from './cash/First';
 function App() {
   return (
     <div className="App">
-      <p>Andrey - vorobei</p>
-      <Banner></Banner>
+      {/* <p>Andrey - vorobei</p> */}
+      {/* <Banner></Banner> */}
       {/* <Page></Page> */}
-      <Page></Page>
+      {/* <Page></Page> */}
       <First></First>
     </div>
   );
