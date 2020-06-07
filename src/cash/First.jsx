@@ -98,7 +98,7 @@ render(){
         } else {
           alert("I'm a Superman!")
         }
-      }}>Do you spender?</button>
+      }}>Are you a spender?</button>
       
     </div>
     
