@@ -14,6 +14,14 @@ state={
 }
 
 
+sumExpences=(a, b, c, d, e)=>{
+  return this.setState({
+    result: this.state.salary-a-b-c-d-e,
+  })
+}
+
+
+
 
 render(){
   return (
@@ -101,6 +109,13 @@ render(){
       }}>Are you a spender?</button>
       
     </div>
+
+    <button onClick={()=>this.sumExpences(this.state.rent, this.state.food, this.state.entertaments, 
+          this.state.bar, this.state.car)
+    }>Are you a spender?</button>
+  
+    <div>{this.state.result}</div>
+    
     
     
     
